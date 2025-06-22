@@ -22,9 +22,14 @@ Then in the search bar, you can type in Terminal and hit enter.
 
 ---
 
-![1750499010369](image/note/1750499010369.png)
+```
+D:\>java -version
+java version "17.0.15" 2025-04-15 LTS
+Java(TM) SE Runtime Environment (build 17.0.15+9-LTS-241)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.15+9-LTS-241, mixed mode, sharing)
+```
 
-## Code in Notepad
+Code in Notepa
 
 You could use a simple text editor to write Java code.
 
