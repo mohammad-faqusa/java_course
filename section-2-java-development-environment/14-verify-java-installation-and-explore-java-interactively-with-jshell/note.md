@@ -1,9 +1,7 @@
 [https://docs.oracle.com/en/java/javase/17/jshell/introduction-jshell.html#GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8](https://docs.oracle.com/en/java/javase/17/jshell/introduction-jshell.html#GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8)
 
 ## Confirming installation and intro to JShell
-
 ---
-
 Now that we have Java installed on our machines, I want to introduce you to the software tool we'll be using to begin to explore the Java programming language. JShell.
 
 Firstly, let's open a command prompt on Windows, or a Terminal in Mac or Linux, to check our Java version, to make sure we are ready.
@@ -19,8 +17,8 @@ For Ubuntu Linux, click on 'show applications', in the bottom left of your scree
 Then in the search bar, you can type in Terminal and hit enter.
 
 ## Java Version
-
 ---
+<<<<<<< HEAD
 
 ```
 D:\>java -version
@@ -31,22 +29,23 @@ Java HotSpot(TM) 64-Bit Server VM (build 17.0.15+9-LTS-241, mixed mode, sharing)
 
 Code in Notepa
 
+=======
+![1750499010369](image/note/1750499010369.png)
+
+## Code in Notepad
+>>>>>>> 26aa02f4f1a2375837e9cd67e30dfe855027cc20
 You could use a simple text editor to write Java code.
 
 ![1750499082297](image/note/1750499082297.png)
 
 ## IntelliJ IDE
-
 ---
-
 Most likely, you'll be using an integrated development environment, or IDE, to develop your Java code.
 
 ![1750499168520](image/note/1750499168520.png)
 
 ## JShell
-
 ---
-
 #### JShell became a standard component of the Java Developers Kit in Java 9.
 
 It is what is known as a Read-Eval-Print-Loop interactive program (or
@@ -60,13 +59,10 @@ REPL for short) which means it does pretty much just that:
 JShell runs in a terminal (or on the command line for Windows) and is usefulfor quickly trying out new ideas.
 
 #### JShell does not replace the need for an IDE.
-
 It's just a handy tool to quickly get started with Java. We will be transitioning to an IDE later in the course.
 
 ## Where's the Java code?
-
 ---
-
 Why did we introduce you to JShell, and not write any Java code? I had a good reason for doing this.
 
 Our first Java code is going to be the very traditional program for a beginner, and we'll do that in the next video.
