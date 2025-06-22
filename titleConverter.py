@@ -12,6 +12,6 @@ def title_to_filename(title):
     return title
 
 # Example usage
-title = '20. Understanding and Using Casting with Numeric Primitive Types in Java'
+title = '21. Primitive Types Challenge: Applying Your Knowledge of Integer Variables'
 filename = title_to_filename(title)
 print(filename)
