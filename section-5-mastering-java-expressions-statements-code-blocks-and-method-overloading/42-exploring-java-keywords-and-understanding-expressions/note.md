@@ -47,4 +47,4 @@ health < 25 && highScore > 1000
 
 highScore - 1000
 
-the assignment :
+the assignment : highScore =
