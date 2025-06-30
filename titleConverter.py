@@ -12,6 +12,6 @@ def title_to_filename(title):
     return title
 
 # Example usage
-title = '27. Simplifying Java Code: Using Abbreviated Operators for Concise Operations'
+title = '28. Embracing the Power of an Integrated Development Environment'
 filename = title_to_filename(title)
 print(filename)
