@@ -34,5 +34,29 @@ public class Hello {
 
         System.out.println(ageText); // Over eighteen
 
+        double myDoubleNumber = 200d;
+        double mySecondDoubeNumber = 80d;
+
+        double sum = (myDoubleNumber + mySecondDoubeNumber) * 100d ;
+        System.out.println("The sum is " + sum);
+        double remainder = sum % 40 ;
+        System.out.println("this is remainder : " + remainder);
+
+        boolean notRemained = remainder == 0 ? true : false;
+
+        System.out.println("not remained : " + notRemained);
+
+        if(!notRemained){
+            System.out.println("Got some remainder");
+        }
+
+//        output :
+//        The sum is 28000.0
+//        this is remainder : 0.0
+//        not remained : true
+
+
+
+
     }
 }
