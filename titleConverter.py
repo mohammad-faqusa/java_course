@@ -12,6 +12,6 @@ def title_to_filename(title):
     return title
 
 # Example usage
-title = "36. Advanced Conditional Logic: Implementing the Logical AND Operator in Java Code"
+title = "38. Assignment vs. Equality: Avoiding Common Java Operator Errors in IntelliJ"
 filename = title_to_filename(title)
 print(filename)
