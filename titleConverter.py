@@ -12,6 +12,6 @@ def title_to_filename(title):
     return title
 
 # Example usage
-title = '33. Creating Your First IntelliJ Project: "Hello World" Java Code Implementation'
+title = '34. Understanding IntelliJ Code Structure: Classes, Methods, and Basic Java Syntax'
 filename = title_to_filename(title)
 print(filename)
