@@ -23,5 +23,16 @@ public class Hello {
             System.out.println("this is not supposed to happen");
         }
 
+        String makeOfCar = "Volkswagen";
+
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true ;
+        System.out.println(isDomestic); // false
+
+        int ageOfClient = 20;
+
+        String ageText = ageOfClient >= 18 ? "Over eighteen" : "Still a kid";
+
+        System.out.println(ageText); // Over eighteen
+
     }
 }
