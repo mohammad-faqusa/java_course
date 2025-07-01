@@ -37,8 +37,15 @@ def prepare_resources(section_title, part_title):
     create_file(part_directory_path, "note.md")
     move_files("./downloads", part_directory_path)
 
+def create_code_exercise(section_title, part_title):
+    section_directory_path = "./" + title_to_filename(section_title)
+    create_directory(section_directory_path)
+    part_directory_path = section_directory_path + "/" + title_to_filename(part_title)
+    # print(part_directory_path)
+    create_directory(part_directory_path)
 
-section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
-part_title = "50. Comparing And Reviewing Code In IntelliJ For Better Development"
-prepare_resources(section_title, part_title)
-
+# section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
+section_title = "coding-exercises"
+part_title = "Coding Exercise 1: Comprehensive 'Positive, Negative, Or Zero' Assessment In Java"
+# prepare_resources(section_title, part_title)
+create_code_exercise(section_title, part_title)
