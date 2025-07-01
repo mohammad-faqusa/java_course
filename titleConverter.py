@@ -44,8 +44,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-# section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
-section_title = "coding-exercises"
-part_title = "Coding Exercise 14: Computing Month Length With Leap Year Consideration"
-# prepare_resources(section_title, part_title)
-create_code_exercise(section_title, part_title)
+section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
+# section_title = "coding-exercises"
+
+part_title = "61. Mastering The for Statement For Repetitive Task Automation"
+
+prepare_resources(section_title, part_title)
+# create_code_exercise(section_title, part_title)
