@@ -46,6 +46,6 @@ def create_code_exercise(section_title, part_title):
 
 section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
 # section_title = "coding-exercises"
-part_title = "52. Delving Into Method Overloading In Java"
+part_title = "53. Practical Method Overloading Challenge To Strengthen Java Expertise"
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
