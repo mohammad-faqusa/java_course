@@ -46,6 +46,6 @@ def create_code_exercise(section_title, part_title):
 
 section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
 # section_title = "coding-exercises"
-part_title = "57. Exploring The Traditional And Enhanced Switch Statements"
+part_title = "58. Delving Deeper Into Advanced Switch Statement Features"
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
