@@ -46,6 +46,6 @@ def create_code_exercise(section_title, part_title):
 
 # section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
 section_title = "coding-exercises"
-part_title = "Coding Exercise 7: Creating An Equal Sum Checker For Strengthening Arithmetic And Comparison Operations"
+part_title = "Coding Exercise 8: Devising A Teen Number Checker For Mastery Of Conditional Range Checking"
 # prepare_resources(section_title, part_title)
 create_code_exercise(section_title, part_title)
