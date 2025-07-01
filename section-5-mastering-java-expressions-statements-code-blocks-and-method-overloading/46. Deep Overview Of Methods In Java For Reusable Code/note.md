@@ -1,3 +1,6 @@
+## the method
+
+```java
 public class MainChallenge {
     public static void main(String[] args) {
         boolean gameOver = true;
@@ -17,3 +20,4 @@ public class MainChallenge {
         }
     }
 }
+```

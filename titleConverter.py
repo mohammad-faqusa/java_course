@@ -1,4 +1,5 @@
 import re
+import os
 
 def title_to_filename(title):
     # Lowercase the title
@@ -12,6 +13,15 @@ def title_to_filename(title):
     return title
 
 # Example usage
-title = "45. Practical If-Then-Else Challenge For Java Flow Control"
+
+current_directory = "section-5-mastering-java-expressions-statements-code-blocks-and-method-overloading"
+title = "46. Deep Overview Of Methods In Java For Reusable Code"
 filename = title_to_filename(title)
+
+newpath = './' + current_directory + '/' + title
+if not os.path.exists(newpath):
+    os.makedirs(newpath)
+
+f = open(newpath + "/note.md", "x")
+
 print(filename)
