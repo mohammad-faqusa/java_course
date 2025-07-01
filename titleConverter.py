@@ -44,8 +44,8 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-# section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
-section_title = "coding-exercises"
-part_title = "Coding Exercise 12: Designing A 'Playing Cat' Logic Program To Refine Conditional Implementation"
-# prepare_resources(section_title, part_title)
-create_code_exercise(section_title, part_title)
+section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
+# section_title = "coding-exercises"
+part_title = "56. Introduction To The Foundations Of Program Flow In Java"
+prepare_resources(section_title, part_title)
+# create_code_exercise(section_title, part_title)
