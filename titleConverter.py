@@ -46,6 +46,6 @@ def create_code_exercise(section_title, part_title):
 
 # section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
 section_title = "coding-exercises"
-part_title = "Coding Exercise 3: Accurate MegaBytes Converter For Mastering Integer Math In Java"
+part_title = "Coding Exercise 4: Developing A 'Barking Dog' Program For Boolean Logic Familiarity"
 # prepare_resources(section_title, part_title)
 create_code_exercise(section_title, part_title)
