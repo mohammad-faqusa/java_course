@@ -39,6 +39,6 @@ def prepare_resources(section_title, part_title):
 
 
 section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
-part_title = "48. Comprehensive Recap Of Java Methods"
+part_title = "49. Hands-On Java Method Challenge For Deeper Practice"
 prepare_resources(section_title, part_title)
 
