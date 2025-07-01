@@ -1,5 +1,6 @@
 import re
 import os
+import shutil
 
 def title_to_filename(title):
     # Lowercase the title
@@ -12,16 +13,32 @@ def title_to_filename(title):
     title = re.sub(r'[^a-z0-9\-]', '', title)
     return title
 
-# Example usage
+def create_directory(newpath):
+    if not os.path.exists(newpath):
+        os.makedirs(newpath)
 
-current_directory = "section-5-mastering-java-expressions-statements-code-blocks-and-method-overloading"
-title = "46. Deep Overview Of Methods In Java For Reusable Code"
-filename = title_to_filename(title)
+def create_file(newpath, filename):
+    filepath = os.path.join(newpath, filename)
+    if not os.path.exists(filepath):
+        with open(filepath, "x") as f:
+            pass  # Or write initial content if needed
 
-newpath = './' + current_directory + '/' + title
-if not os.path.exists(newpath):
-    os.makedirs(newpath)
+def move_files(source_dir, target_dir):
+    file_names = os.listdir(source_dir)
+    for file_name in file_names:
+        shutil.move(os.path.join(source_dir, file_name), target_dir)
 
-f = open(newpath + "/note.md", "x")
+def prepare_resources(section_title, part_title):
+    section_directory_path = "./" + title_to_filename(section_title)
+    create_directory(section_directory_path)
+    part_directory_path = section_directory_path + "/" + title_to_filename(part_title)
+    print(part_directory_path)
+    create_directory(part_directory_path)
+    create_file(part_directory_path, "note.md")
+    move_files("./downloads", part_directory_path)
 
-print(filename)
+
+section_title = "Section 5: Mastering Java Expressions, Statements, Code Blocks, And Method Overloading"
+part_title = "47. Enhancing Skills With Additional Java Method Techniques"
+prepare_resources(section_title, part_title)
+
