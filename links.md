@@ -22,6 +22,8 @@
 
 [Java keywords](https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html#jls-3.9)
 
+[debug code](<[https://www.jetbrains.com/help/idea/debugging-code.html](https://www.jetbrains.com/help/idea/debugging-code.html)>)
+
 ## examples :
 
 [200 pounds in kg](https://www.google.com/search?q=200+pounds+in+kg&rlz=1C1PRFI_enPH986PH986&oq=200+pounds+in+kg&aqs=chrome..69i57j0i22i30l9.1482j0j7&sourceid=chrome&ie=UTF-8)

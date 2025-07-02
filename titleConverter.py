@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
 # section_title = "coding-exercises"
 
-part_title = "62. Comprehensive for Loop Challenge To Strengthen Iteration Skills"
+part_title = "63. Sum 3 And 5 Challenge With IntelliJ Debugger Insights"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
