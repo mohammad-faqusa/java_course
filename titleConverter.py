@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
 # section_title = "coding-exercises"
 
-part_title = "72. Handling Exceptions And Introducing The Scanner Class"
+part_title = "73. Reading Input With The Scanner For Seamless User Interaction"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)

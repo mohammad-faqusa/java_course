@@ -11,10 +11,28 @@ public class Main {
 
             System.out.println("Age = " + (currentYear - dateOfBirth));
         }
+        boolean isValidDob = false;
+        do {
+            System.out.println("Please enter your data of birth: ");
+            try{
+                Scanner input = new Scanner(System.in);
+                int age = checkData(2025, input.nextLine());
+                if(age > 0 ) {
+                    isValidDob = true;
+
+                } else {
+                    continue;
+                }
+                System.out.println("Age = " + (age));
+
+            } catch (NumberFormatException e) {
+                System.out.println("Please enter a valid data of birth");
+            }
+        }while(!isValidDob);
         try{
-            int currentYear = 2022;
+            int currentYear = 2025;
 //            System.out.println(getInputFromConsole(currentYear));
-            System.out.println(getInputFromScanner(currentYear));
+
         } catch(NullPointerException e){
             System.out.println(e.getMessage());
         }
@@ -35,5 +53,13 @@ public class Main {
         int age = Integer.parseInt(scanner.nextLine());
 
         return "Your name is "+ name + " Your age is " + age;
+    }
+
+    public static int checkData(int currentYear, String dateOfBirth){
+        int dob = Integer.parseInt(dateOfBirth);
+
+        if(dob > currentYear ||  dob < currentYear - 125 )
+            return -1 ;
+        return currentYear - dob;
     }
 }

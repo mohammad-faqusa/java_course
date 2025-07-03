@@ -24,6 +24,8 @@
 
 [debug code](<[https://www.jetbrains.com/help/idea/debugging-code.html](https://www.jetbrains.com/help/idea/debugging-code.html)>)
 
+[exceptions](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html)
+
 ## examples :
 
 [200 pounds in kg](https://www.google.com/search?q=200+pounds+in+kg&rlz=1C1PRFI_enPH986PH986&oq=200+pounds+in+kg&aqs=chrome..69i57j0i22i30l9.1482j0j7&sourceid=chrome&ie=UTF-8)
