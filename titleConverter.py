@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 # section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
 section_title = "coding-exercises"
 
-part_title = "Coding Exercise 24: Converting Digits Into Words And Handling Edge Cases"
+part_title = "Coding Exercise 25: Managing Flour Pack Requirements With Limited Bucket Sizes"
 
 # prepare_resources(section_title, part_title)
 create_code_exercise(section_title, part_title)
