@@ -44,10 +44,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
-# section_title = "coding-exercises"
+# section_title = "Section 6: Mastering Conditional Logic, Loops, And Interactive Java Applications"
+section_title = "coding-exercises"
 
-part_title = "75. Identifying Min And Max Values – A Final Control Flow Challenge"
+part_title = "Coding Exercise 28: Interactive Summation And Average Calculator From User Input"
 
-prepare_resources(section_title, part_title)
-# create_code_exercise(section_title, part_title)
+# prepare_resources(section_title, part_title)
+create_code_exercise(section_title, part_title)
