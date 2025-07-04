@@ -38,4 +38,8 @@ public class Customer {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    public void close(){
+        System.out.println("Customer " + this.name + " closed");
+    }
 }
