@@ -1,14 +1,18 @@
 public class ClassChellange {
     public static void main(String[] args) {
-        BankAccount bankAccount = new BankAccount();
-        bankAccount.setCustomerName("Mohammad");
-        bankAccount.setAccountNumber(1);
-        bankAccount.setCustomerEmail("m@g.com");
-        bankAccount.setBalance(500);
-        bankAccount.deposit(500);
-        bankAccount.withdraw(600);
+        Account account = new Account();
+        account.setCustomerName("Mohammad");
+        account.setAccountNumber("1");
+        account.setCustomerEmail("m@g.com");
+        account.setBalance(500);
+        account.deposit(500);
+        account.withdraw(600);
 
-        System.out.println(bankAccount.toString());
+        System.out.println(account.toString());
+
+        Account mohammadsAccount = new Account("123", 1000, "Mohammad", "m@gmail.com");
+        System.out.println(mohammadsAccount.toString());
+
 
     }
 }

@@ -1,10 +1,21 @@
-public class BankAccount {
-    private int accountNumber;
+public class Account {
+    private String accountNumber;
     private double balance;
     private String customerName;
     private String customerEmail;
 
-    public int getAccountNumber() {
+    public Account() {
+        System.out.println("The constructor is called");
+    }
+
+    public Account(String accountNumber, double balance, String customerName, String customerEmail) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+    }
+
+    public String getAccountNumber() {
         return accountNumber;
     }
 
@@ -20,7 +31,7 @@ public class BankAccount {
         return customerEmail;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
