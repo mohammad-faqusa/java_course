@@ -9,7 +9,7 @@ public class CustomerChallenge {
         Customer Ahmad = new Customer("Ahmad" , "Ahmad@gmail.com");
         System.out.println(Ahmad.toString());
 
-        
+
 
         new Customer(); // can't access it later, because has no reference
 
