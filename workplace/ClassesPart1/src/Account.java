@@ -5,6 +5,8 @@ public class Account {
     private String customerEmail;
 
     public Account() {
+        this("32434234", 10000, "Default Name", "Default Email"); // must be called at first line
+        System.out.println(this.toString());
         System.out.println("The constructor is called");
     }
 
@@ -13,6 +15,12 @@ public class Account {
         this.balance = balance;
         this.customerName = customerName;
         this.customerEmail = customerEmail;
+    }
+
+    public Account(String customerName, String customerEmail) {
+        this("9999", 100.5, customerName, customerEmail);
+//        this.customerName = customerName;
+//        this.customerEmail = customerEmail;
     }
 
     public String getAccountNumber() {
