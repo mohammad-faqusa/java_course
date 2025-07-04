@@ -11,6 +11,22 @@ public class Student {
         this.classList = classList;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDataOfBirth() {
+        return dataOfBirth;
+    }
+
+    public String getClassList() {
+        return classList;
+    }
+
     @Override
     public String toString() {
         return "Student{" +

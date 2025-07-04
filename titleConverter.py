@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 7: Mastering Java OOP: Classes & Inheritance"
 # section_title = "coding-exercises"
 
-part_title = "87. POJOs: Plain Old Java Objects"
+part_title = "88. Java Records: The Modern POJO Approach"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
