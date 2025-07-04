@@ -1,4 +1,6 @@
-public class Customer {
+
+import java.io.*;
+public class Customer implements AutoCloseable {
 
     private String name;
     private double creditlimit;
@@ -39,7 +41,9 @@ public class Customer {
                 '}';
     }
 
-    public void close(){
-        System.out.println("Customer " + this.name + " closed");
+
+    @Override
+    public void close() throws Exception {
+        System.out.println("Customer closed");
     }
 }
