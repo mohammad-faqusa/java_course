@@ -11,3 +11,5 @@ every class is created in java is actually extends this **class**
 equals
 
 toString()
+
+commited from linux !
