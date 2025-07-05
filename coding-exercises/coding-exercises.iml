@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-1-comprehensive-positive-negative-or-zero-assessment-in-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-10-implementing-a-minutes-to-years-and-days-calculator-for-advanced-time-conversions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-11-crafting-an-equality-printer-to-explore-multiple-conditional-checks-in-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-12-designing-a-playing-cat-logic-program-to-refine-conditional-implementation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-13-determining-word-representation-of-numbers-accurately" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-14-computing-month-length-with-leap-year-consideration" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-15-summing-odd-numbers-in-a-specified-range" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-16-identifying-palindromic-numbers-for-enhanced-numeric-validation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-17-summing-the-first-and-last-digits-of-an-integer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-18-calculating-the-sum-of-all-even-digits-in-an-integer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-19-checking-for-a-shared-digit-between-two-numbers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-2-implementing-a-speed-converter-to-practice-basic-java-arithmetic-and-output" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-20-evaluating-the-last-digit-for-multiple-integer-comparisons" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-21-listing-all-factors-of-a-given-number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-22-deriving-the-greatest-common-divisor-gcd-efficiently" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-23-confirming-perfect-numbers-through-sum-of-proper-divisors" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-24-converting-digits-into-words-and-handling-edge-cases" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-25-managing-flour-pack-requirements-with-limited-bucket-sizes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-26-identifying-the-largest-prime-factor-of-a-number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-27-constructing-a-diagonal-star-pattern-with-loops" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-28-interactive-summation-and-average-calculator-from-user-input" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-29-efficient-paint-job-planning-with-bucket-calculations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-3-accurate-megabytes-converter-for-mastering-integer-math-in-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-30-sum-calculator-implementation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-31-person-class-and-age-validation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-32-wall-area-computation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-33-point-class-and-distance-calculation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-34-carpet-cost-calculator-class" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-35-complex-number-operations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-4-developing-a-barking-dog-program-for-boolean-logic-familiarity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-5-implementing-a-precise-leap-year-calculator-to-enhance-conditional-reasoning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-6-building-a-decimal-comparator-to-practice-floating-point-comparisons-in-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-7-creating-an-equal-sum-checker-for-strengthening-arithmetic-and-comparison-operations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-8-devising-a-teen-number-checker-for-mastery-of-conditional-range-checking" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coding-exercise-9-constructing-a-comprehensive-area-calculator-for-circles-and-rectangles-in-java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
