@@ -14,22 +14,23 @@ public class Printer {
     }
 
     public int addToner(int tonerAmount) {
-        if(tonerAmount < 0) {
-            return -1 ;
+
+        if (tonerAmount > 0 && tonerAmount <= 100) {
+            if (this.tonerLevel + tonerAmount > 100) {
+                return -1;
+            }
+            this.tonerLevel += tonerAmount;
+            return this.tonerLevel;
+        } else {
+            return -1;
         }
-        int tempAmount = tonerAmount +  tonerLevel;
-        if(tempAmount < 0 || tempAmount > 100) {
-            return -1 ;
-        }
-        tonerLevel += tonerAmount;
-        return tonerLevel;
     }
 
     public int printPages(int pages) {
         if(pages <= 0) {
             return -1 ;
         }
-        int jobPages = (duplex) ? (pages/2) : pages;
+        int jobPages = (duplex) ? (pages % 2 == 0 ? pages/2 : pages/2 + 1) : pages;
         pagesPrinted += jobPages;
         return jobPages;
     }
