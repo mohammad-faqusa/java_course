@@ -20,8 +20,19 @@ public class NextMain {
         scaryAdventure.watchMovie();
         scaryAdventure.watchAdventure();
 
+        Object unknownObject = Movie.getMovie("S", "Unknown");
+        if(unknownObject.getClass().getSimpleName() == "Comedy") {
+            Comedy c = (Comedy) unknownObject;
+            c.watchMovie();
+            c.watchComedy();
+        } else if (unknownObject instanceof Adventure) {
+            ((Adventure) unknownObject).watchAdventure();
+        } else if (unknownObject instanceof ScienceFiction syfy) {
+            syfy.watchMovie();
+            syfy.watchScience();
+        }
 
-//        adv.watchMovie() // error
+
 
 
     }

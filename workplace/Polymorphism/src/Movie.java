@@ -16,8 +16,8 @@ public class Movie {
 
         return switch(type.toUpperCase().charAt(0)) {
             case 'A' -> new Adventure(title);
-//            case 'C' -> new Comedy(title);
-//            case 'S' -> new ScienceFiction(title);
+            case 'C' -> new Comedy(title);
+            case 'S' -> new ScienceFiction(title);
             default -> new Movie(title);
         } ;
     }
@@ -38,5 +38,41 @@ class Adventure extends Movie {
 
     public void watchAdventure() {
         System.out.println("You are watching adventure!");
+    }
+}
+
+class Comedy extends Movie {
+
+    public Comedy(String title) {
+        super(title);
+    }
+
+    @Override
+    public void watchMovie() {
+        super.watchMovie();
+        System.out.println("Very fun Scene");
+
+    }
+
+    public void watchComedy() {
+        System.out.println("You are watching comedy directly!");
+    }
+}
+
+class ScienceFiction extends Movie {
+
+    public ScienceFiction(String title) {
+        super(title);
+    }
+
+    @Override
+    public void watchMovie() {
+        super.watchMovie();
+        System.out.println("This is very informative");
+
+    }
+
+    public void watchScience() {
+        System.out.println("You are watching science directly");
     }
 }
