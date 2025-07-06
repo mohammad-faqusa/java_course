@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
 # section_title = "coding-exercises"
 
-part_title = "105. Encapsulation Essentials, Part 1: Data Hiding and Simplifying Interfaces"
+part_title = "106. Encapsulation Deep Dive, Part 2: Enhancing Classes and Securing Data"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
