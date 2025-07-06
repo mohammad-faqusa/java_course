@@ -1,1 +1,1 @@
-String comparison methods
+## String comparison methods
