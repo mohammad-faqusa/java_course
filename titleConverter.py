@@ -44,10 +44,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-# section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
-section_title = "coding-exercises"
+section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
+# section_title = "coding-exercises"
 
-part_title = "Coding Exercise 38: Bedroom Composition Exercise: Creating Classes for Lamp, Bed, and Wall"
+part_title = "105. Encapsulation Essentials, Part 1: Data Hiding and Simplifying Interfaces"
 
-# prepare_resources(section_title, part_title)
-create_code_exercise(section_title, part_title)
+prepare_resources(section_title, part_title)
+# create_code_exercise(section_title, part_title)
