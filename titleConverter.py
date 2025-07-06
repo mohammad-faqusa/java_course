@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
 # section_title = "coding-exercises"
 
-part_title = "101. Embarking on OOP Part 2: Composition, Encapsulation, and Polymorphism Essentials"
+part_title = "102. Building a Computer with Composition: Understanding Has-A vs. Is-A in Java"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
