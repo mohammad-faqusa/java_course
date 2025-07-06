@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
 # section_title = "coding-exercises"
 
-part_title = "C108. Polymorphism Foundations, Part 1: Introducing Movie Subclasses for Runtime Varia"
+part_title = "109. Polymorphism in Practice, Part 2: Factory Methods, Runtime Types, and Movie Scen"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
