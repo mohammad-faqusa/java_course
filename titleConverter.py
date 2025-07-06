@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
 # section_title = "coding-exercises"
 
-part_title = "103. Assembling a Personal Computer: Real-World Composition and Object Management"
+part_title = "104. Hands-On Smart Kitchen Challenge: Modeling IoT Appliances with Composition"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
