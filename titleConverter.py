@@ -44,10 +44,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
-# section_title = "coding-exercises"
+# section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
+section_title = "coding-exercises"
 
-part_title = "112. Polymorphism Challenge: Building Gas, Electric, and Hybrid Car Classes in Java"
+part_title = "Coding Exercise 40: Polymorphism"
 
-prepare_resources(section_title, part_title)
-# create_code_exercise(section_title, part_title)
+# prepare_resources(section_title, part_title)
+create_code_exercise(section_title, part_title)
