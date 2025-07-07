@@ -47,7 +47,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 8: Advanced OOP Techniques: Composition, Encapsulation, and Polymorphism in Action"
 # section_title = "coding-exercises"
 
-part_title = "113. Polymorphism Challenge, Part 2: Finalizing Car Inheritance and Overridden Method"
+part_title = "114. OOP Master Challenge, Part 1: Crafting a Burger Restaurant App with OOP Concepts"
 
 prepare_resources(section_title, part_title)
 # create_code_exercise(section_title, part_title)
