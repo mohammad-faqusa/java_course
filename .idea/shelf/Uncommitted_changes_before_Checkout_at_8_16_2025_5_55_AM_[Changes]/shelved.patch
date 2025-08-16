@@ -1,0 +1,39 @@
+Index: section-2-java-development-environment/9-essential-software-tools-for-java-development-jdk17-and-intellij-idea/note.txt
+===================================================================
+diff --git a/section-2-java-development-environment/9-essential-software-tools-for-java-development-jdk17-and-intellij-idea/note.txt b/section-2-java-development-environment/9-essential-software-tools-for-java-development-jdk17-and-intellij-idea/note.md
+rename from section-2-java-development-environment/9-essential-software-tools-for-java-development-jdk17-and-intellij-idea/note.txt
+rename to section-2-java-development-environment/9-essential-software-tools-for-java-development-jdk17-and-intellij-idea/note.md
+--- a/section-2-java-development-environment/9-essential-software-tools-for-java-development-jdk17-and-intellij-idea/note.txt	(revision b4b7fe37f11e8a9a8a5094917d71b6952e20dfdd)
++++ b/section-2-java-development-environment/9-essential-software-tools-for-java-development-jdk17-and-intellij-idea/note.md	(date 1755260969155)
+@@ -1,4 +1,8 @@
+-we will use jdk 17 
++## 9. Essential Software Tools for Java Development: JDK 17 and IntelliJ IDEA
++
++### Software tools introduction 
+ 
+-intellij IDEA 
++#### JDK 17 
++
++#### Intellig IDE 
+ 
+Index: workplace/HelloWorld/src/FirstClass.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class FirstClass {\r\n\r\n    public static void main(String [] args){\r\n        System.out.println(\"Hello Mohammad\");\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/workplace/HelloWorld/src/FirstClass.java b/workplace/HelloWorld/src/FirstClass.java
+--- a/workplace/HelloWorld/src/FirstClass.java	(revision b4b7fe37f11e8a9a8a5094917d71b6952e20dfdd)
++++ b/workplace/HelloWorld/src/FirstClass.java	(date 1755265861285)
+@@ -4,4 +4,12 @@
+         System.out.println("Hello Mohammad");
+     }
+ 
++    public static int add(int a, int b){
++        return a+b;
++    }
++
++//    public static double add(int a, int b){
++//        return a-b;
++//    }
++
+ }
