@@ -12,5 +12,5 @@
 #### JDK 
 * why jdk 17 instead of jdk 22? 
   * explained later videos 
-* even you still in older version, you can get value 
+* even you still in older version, you can get value
 
