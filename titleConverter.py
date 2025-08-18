@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 3: First Steps in Java Programming"
+section_title = "Section 5: Master Java Expressions, Statements, Code Blocks, And method..."
 # section_title = "coding-exercises"
 
-part_title = "27. Simplifying Java Code: Using Abbreviated Operators for Concise Operations"
+part_title = "41. Introduction To The Fundamentals Of Java Workflow"
 print(f"export PART_TITLE='{part_title }'")
 
 prepare_resources(section_title, part_title)
