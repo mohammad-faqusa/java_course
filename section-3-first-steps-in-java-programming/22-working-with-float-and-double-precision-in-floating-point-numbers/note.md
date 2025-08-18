@@ -42,4 +42,52 @@ System.out.println("Float Value Range (" + Float.MIN_VALUE + " to " +Float.MAX_V
 System.out.println("Double Value Range (" + Double.MIN_VALUE + " to " +Double.MAX_VALUE + ") " );
 ```
 
+```java
+int myIntValue = 5; float myFloatValue = 5; double myDoubleValue = 5;
+```
+* it is recommended to use suffix appended after the decimal value  
+'D', 'd' : double  
+'F', 'f' : float
 
+_notice that we didn't put the suffix :_ 
+```jshelllanguage
+jshell> int myIntValue = 5; float myFloatValue = 5; double myDoubleValue = 5;
+myIntValue ==> 5
+myFloatValue ==> 5.0
+myDoubleValue ==> 5.0
+```
+
+```java
+int myIntValue = 5; float myFloatValue = 5f; double myDoubleValue = 5d;
+```
+same output : 
+```jshelllanguage
+jshell> int myIntValue = 5; float myFloatValue = 5; double myDoubleValue = 5;
+myIntValue ==> 5
+myFloatValue ==> 5.0
+myDoubleValue ==> 5.0
+```
+
+but when assign double (by default) value to float variable : 
+
+```jshelllanguage
+jshell> float myFloatValue = 5.25;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myFloatValue = 5.25;
+|                       ^--^
+
+```
+
+#### Challenge 
+use casting to solve the problem : 
+##### Solution 
+```jshelllanguage
+jshell> float myFloatValue = (float) 5.25;
+myFloatValue ==> 5.25
+
+// or 
+
+jshell> float myFloatValue = 5.25f;
+myFloatValue ==> 5.25
+```

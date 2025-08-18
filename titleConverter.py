@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 3: First Steps in Java Programming"
 # section_title = "coding-exercises"
 
-part_title = "22. Working with Float and Double: Precision in Floating Point Numbers"
+part_title = "27. Simplifying Java Code: Using Abbreviated Operators for Concise Operations"
 print(f"export PART_TITLE='{part_title }'")
 
 prepare_resources(section_title, part_title)
