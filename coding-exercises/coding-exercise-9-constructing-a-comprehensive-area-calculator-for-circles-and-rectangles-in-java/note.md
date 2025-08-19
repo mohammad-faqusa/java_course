@@ -1,0 +1,15 @@
+## Coding Exercise 9: Constructing A Comprehensive Area Calculator For Circles And Rectangles In Java
+
+```java
+public class AreaCalculator {
+    // write code here
+    public static double area(double radius){
+        if(radius < 0) return -1.0 ; 
+        return Math.PI * area(radius, radius); 
+    }
+    public static double area(double x, double y){
+        if(x < 0 || y < 0 ) return -1.0; 
+        return x * y; 
+    }
+}
+```

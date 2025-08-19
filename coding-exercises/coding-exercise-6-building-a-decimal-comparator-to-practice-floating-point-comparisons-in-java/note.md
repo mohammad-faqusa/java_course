@@ -1,0 +1,11 @@
+## Coding Exercise 6: Building A Decimal Comparator To Practice Floating-Point Comparisons In Java
+
+```java
+public class DecimalComparator {
+    // write code here
+    public static boolean areEqualByThreeDecimalPlaces(double number1, double number2){
+
+        return ((int)(number1 * 1000) == (int)(number2 * 1000)); 
+    }
+}
+```

@@ -1,0 +1,19 @@
+## Coding Exercise 5: Implementing A Precise Leap Year Calculator To Enhance Conditional Reasoning
+```java
+public class LeapYear {
+    // write code here
+    public static boolean isLeapYear(int year){
+        if(year < 1 || year > 9999) return false; 
+
+        if(year % 4 == 0 ){
+            if(year % 100 == 0){
+                if(year % 400 == 0) return true;
+                return false; 
+            } else {
+                return true;
+            }
+        }
+        return false; 
+    }
+}
+```
