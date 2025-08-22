@@ -30,7 +30,7 @@ public class Hello {
         // change top score to 81
 
         int newValue = 50;
-        if (newValue = 50) {
+        if (newValue == 50) {
             System.out.println("this is an error ");
         }
     }
