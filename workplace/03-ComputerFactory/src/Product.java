@@ -53,6 +53,10 @@ class Motherboard extends Product {
     public Motherboard(String model, String manufacturer) {
         super(model, manufacturer);
     }
+
+    public void loadProgram(String porgram) {
+        System.out.println("Loading program " + porgram + "...");
+    }
 }
 
 class ComputerCase extends Product {
@@ -66,5 +70,9 @@ class ComputerCase extends Product {
 
     public ComputerCase(String model, String manufacturer) {
         super(model, manufacturer);
+    }
+
+    public void pressPowerButton(){
+        System.out.println("Power button pressed");
     }
 }
