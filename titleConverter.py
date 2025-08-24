@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 7: Mastering Java OOP: Classes & Inheritance"
 # section_title = "coding-exercises"
 
-part_title = "113. Polymorphism Challenge, Part 2: Finalizing Car Inheritance and Overridden Method"
+part_title = "117. Project Structure and Modular Design: Harnessing Packages and Import Statements"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
