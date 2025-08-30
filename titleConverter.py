@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 # section_title = "Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques"
 section_title = "coding-exercises"
 
-part_title = "Coding Exercise 42: Implement Min Finder: Reading and Storing Data for Minimum Value Discovery"
+part_title = "Coding Exercise 43: Reverse an Array: Mastering In-Place Swaps for Efficient Reordering"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
