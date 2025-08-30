@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques"
-# section_title = "coding-exercises"
+# section_title = "Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques"
+section_title = "coding-exercises"
 
-part_title = "127. Finding the Smallest Value: A Hands-On Minimum Element Challenge"
+part_title = "Coding Exercise 42: Implement Min Finder: Reading and Storing Data for Minimum Value Discovery"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
