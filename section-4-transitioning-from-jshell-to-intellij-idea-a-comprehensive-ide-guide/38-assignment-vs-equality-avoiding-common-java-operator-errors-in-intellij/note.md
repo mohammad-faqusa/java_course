@@ -11,7 +11,7 @@ public static void main(String[] args) {
     }
     
     //
-    boolean isCar = fasle; 
+    boolean isCar = false; 
     if(isCard = true) {
         System.out.println("This is not supposed to happen");
     }

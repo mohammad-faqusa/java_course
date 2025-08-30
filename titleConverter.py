@@ -44,7 +44,7 @@ def prepare_resources(section_title, part_title):
     print(part_directory_path)
     create_directory(part_directory_path)
     create_file(part_directory_path, "note.md")
-    note_path = os.path.join(part_directory_path, "note.md")
+    note_path = os .path.join(part_directory_path, "note.md")
     append_line(note_path, f"## {part_title}")
     move_files("./downloads", part_directory_path)
 
@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 7: Mastering Java OOP: Classes & Inheritance"
+section_title = "Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques"
 # section_title = "coding-exercises"
 
-part_title = "117. Project Structure and Modular Design: Harnessing Packages and Import Statements"
+part_title = "118. Arrays Introduction: Handling Multiple Values Efficiently in Java"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
