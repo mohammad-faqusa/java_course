@@ -1,5 +1,7 @@
 package dev.lpa;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         int[] myIntArray = new int[10];
@@ -21,5 +23,29 @@ public class Main {
         for (int i = 0; i < newArray.length; i++) {
             System.out.print(newArray[i] + " ");
         }
+
+        newArray = new int[5];
+        for(int i = 0; i < newArray.length; i++) {
+            System.out.print(newArray[i] + " "); // print zeros
+        }
+
+        int [] newArrayEnhanced;
+        newArrayEnhanced = new int[5];
+        for(int i : newArrayEnhanced){
+            System.out.print( i + " " ); // print zeros
+        }
+
+        System.out.println(Arrays.toString(newArray));
+        Object objectVariable = newArray;
+        if(objectVariable instanceof int[]){
+            System.out.println("objectVariable is really an int array");
+            System.out.println(newArray.getClass().getName());
+        }
+
+        Object[] objectArray = new Object[3];
+        objectArray[0] = "Hello";
+        objectArray[1] = new StringBuilder("World");
+        objectArray[2] = newArray;
+        System.out.println(Arrays.toString(objectArray));
     }
 }
