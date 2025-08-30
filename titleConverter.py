@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques"
 # section_title = "coding-exercises"
 
-part_title = "126. Embracing varargs: Flexible Method Parameters and Array Conversions"
+part_title = "127. Finding the Smallest Value: A Hands-On Minimum Element Challenge"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
