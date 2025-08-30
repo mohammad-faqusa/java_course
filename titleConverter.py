@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-# section_title = "Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques"
-section_title = "coding-exercises"
+section_title = "Section 9: Advanced Arrays in Java: Single & Multi-Dimensional Techniques"
+# section_title = "coding-exercises"
 
-part_title = "Coding Exercise 43: Reverse an Array: Mastering In-Place Swaps for Efficient Reordering"
+part_title = "129. Navigating 2D Arrays: Matrix Representation and Nested Loop Traversals"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
