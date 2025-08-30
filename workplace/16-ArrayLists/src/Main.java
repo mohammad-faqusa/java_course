@@ -20,6 +20,9 @@ public class Main {
         ArrayList<GroceryItem> groceryList = new ArrayList<GroceryItem>();
         groceryList.add(new GroceryItem("Butter"));
         groceryList.add(new GroceryItem("Yogurt"));
+        groceryList.add(new GroceryItem("oranges", "PRODUCE", 6));
+        groceryList.add(0, new GroceryItem("apples", "PRODUCE", 7));
+
 
         System.out.println(Arrays.toString(groceryList.toArray()));
 
