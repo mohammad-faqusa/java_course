@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 10: Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums"
-# section_title = "coding-exercises"
+# section_title = "Section 10: Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums"
+section_title = "coding-exercises"
 
-part_title = "137. LinkedList Overview: Memory, Big O, and Why LinkedList Exists"
+part_title = "Coding Exercise 44: Mobile Phone Contacts: Managing a List of Names & Calls"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
