@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 10: Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums"
 # section_title = "coding-exercises"
 
-part_title = "135. Arrays vs. ArrayLists: A Practical Comparison"
+part_title = "136. ArrayList Challenge Part 1: Building an Interactive Grocery List"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
