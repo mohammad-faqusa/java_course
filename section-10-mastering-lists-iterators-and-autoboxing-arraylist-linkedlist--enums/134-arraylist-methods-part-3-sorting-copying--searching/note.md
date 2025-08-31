@@ -1,5 +1,13 @@
+## 134. ArrayList Methods (Part 3): Sorting, Copying & Searching
+
+#### accessing the elements in the arraylist 
+* we use get() method 
+
+### back to main code
+
+```java
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
@@ -28,6 +36,12 @@ public class MoreLists {
         groceries.addAll(List.of("pickles2", "mustard3", "cheese4"));
         System.out.println(groceries);
 
+        System.out.println("Third item = " + groceries.get(2));
+
+        if (groceries.contains("milk")) {
+            sout("milk is in the list");
+        }
+
         groceries.add("yogurt");
         System.out.println("first = " + groceries.indexOf("yogurt"));
         System.out.println("last =" + groceries.lastIndexOf("yogurt"));
@@ -49,16 +63,20 @@ public class MoreLists {
         System.out.println("isEmpty : " + groceries.isEmpty());
 
         groceries.addAll(List.of("apples", "milk", "mustard", "cheese"));
-        groceries.addAll(Arrays.asList("eggs", "pickles", "mustard", "ham"));
+        groceries.addAll(Array.asList("eggs", "pickles", "mustard", "ham"));
 
         System.out.println(groceries);
         groceries.sort(Comparator.naturalOrder());
         System.out.println(groceries);
-
+        
         groceries.sort(Comparator.reverseOrder());
         System.out.println(groceries);
-
+        
         var groceryArray = groceries.toArray(new String[groceries.size()]);
         System.out.println(Arrays.toString(groceryArray));
+        
+
+        
     }
 }
+```
