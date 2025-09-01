@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 10: Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums"
 # section_title = "coding-exercises"
 
-part_title = "143. Introduction to Autoboxing & Unboxing: Moving Between Primitives & Wrappers"
+part_title = "144. Autoboxing & Unboxing for Arrays & Lists: Working with Wrapper Classes"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
