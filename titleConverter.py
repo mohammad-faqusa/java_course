@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 10: Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums"
-# section_title = "coding-exercises"
+# section_title = "Section 10: Mastering Lists, Iterators, and Autoboxing: ArrayList, LinkedList & Enums"
+section_title = "coding-exercises"
 
-part_title = "145. Autoboxing & Unboxing Challenge: Simple Banking App (Part 1)"
+part_title = "Coding Exercise 46: Banking System: Branches, Customers & Transactions"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
