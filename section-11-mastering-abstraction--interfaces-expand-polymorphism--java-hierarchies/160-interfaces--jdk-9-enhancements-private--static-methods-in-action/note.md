@@ -7,6 +7,6 @@
     * even don't specify public, it is public be default 
 2. call the method in Test class 
 
-#### private methdos in (jDK 9) 
+#### private methods in (jDK 9) 
 * give private methods both static and non static 
 * a private static method can be accessed either a public static method , a defualt method, or private non-static method 

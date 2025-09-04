@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 11: Mastering Abstraction & Interfaces: Expand Polymorphism & Java Hierarchies"
 # section_title = "coding-exercises"
 
-part_title = "161. Interface vs. Abstract Class: Key Differences & Best Use Cases"
+part_title = "163. Interface Challenge (Part 2): Finalizing Mapping Logic & Extended Features"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
