@@ -1,3 +1,5 @@
+package dev.lpa;
+
 enum FlightStages implements Trackable {GROUNDED, LAUNCH, CRUISE, DATA_COLLECTION;
 
     @Override
@@ -15,32 +17,9 @@ enum FlightStages implements Trackable {GROUNDED, LAUNCH, CRUISE, DATA_COLLECTIO
     }
 }
 
-
 record DragonFly(String name, String type) implements FlightEnabled {
-    @Override
-    public void move() {
-
-    }@Override
-    public void takeOff() {
-
-    }@Override
-    public void land() {
-
-    }@Override
-    public void fly() {
-
-    }}
-
-class Satellite implements OrbitEarth {
-
-    public void achieveOrbit() {
-        System.out.println("Orbit achieved!");
-    }
 
     @Override
-    public void move() {
-
-    }@Override
     public void takeOff() {
 
     }
@@ -56,6 +35,27 @@ class Satellite implements OrbitEarth {
     }
 }
 
+class Satellite implements OrbitEarth {
+
+    public void achieveOrbit() {
+        System.out.println("Orbit achieved!");
+    }
+
+    @Override
+    public void takeOff() {
+
+    }
+
+    @Override
+    public void land() {
+
+    }
+
+    @Override
+    public void fly() {
+
+    }
+}
 
 interface OrbitEarth extends FlightEnabled {
 
@@ -80,14 +80,13 @@ interface FlightEnabled {
         return nextStage;
     }
 
-
-
 }
 
 interface Trackable {
 
     void track();
 }
+
 
 public abstract class Animal {
 
