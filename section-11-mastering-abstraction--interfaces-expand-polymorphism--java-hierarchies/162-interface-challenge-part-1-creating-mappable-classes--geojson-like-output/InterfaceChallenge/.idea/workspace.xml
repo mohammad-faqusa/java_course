@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45669204-2df4-4f9f-8df2-0e484d30b2b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../workplace/23-InterfaceChallenge/23-InterfaceChallenge.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../160-interfaces--jdk-9-enhancements-private--static-methods-in-action/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../160-interfaces--jdk-9-enhancements-private--static-methods-in-action/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../titleConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../titleConverter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674509520496</updated>
-      <workItem from="1756982762016" duration="948000" />
+      <workItem from="1756982762016" duration="1590000" />
     </task>
     <servers />
   </component>
