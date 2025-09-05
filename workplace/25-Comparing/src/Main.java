@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Comparator;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -18,8 +19,19 @@ public class Main {
 
         Student[] stuArr = new Student[]{new Student("Tom" , 18) , new Student("Jerry" , 19) , new Student("Jack" , 17)};
 
-        Arrays.sort(stuArr);
-        System.out.println(Arrays.toString(stuArr));
+//        Arrays.sort(stuArr);
+//        System.out.println(Arrays.toString(stuArr));
+
+        Comparator<Student> gpaComparator = new StudentGPAComparator();
+        Arrays.sort(stuArr , gpaComparator);
+    }
+}
+
+class StudentGPAComparator implements Comparator<Student> {
+
+    @Override
+    public int compare(Student o1, Student o2) {
+        return Integer.compare(o1.getAge(), o2.getAge());
     }
 }
 
