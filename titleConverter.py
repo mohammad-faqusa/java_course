@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-# section_title = "Section 11: Mastering Abstraction & Interfaces: Expand Polymorphism & Java Hierarchies"
-section_title = "coding-exercises"
+section_title = "Section 12: Deep Dive into Java Generics: Bounds, Comparators & Advanced Techniques"
+# section_title = "coding-exercises"
 
-part_title = "Coding Exercise 48: Implementing the ISaveable Interface: Storing & Retrieving Player & Monster Data"
+part_title = "164. Generics Overview: Why Type Parameters & Where They Excel"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
