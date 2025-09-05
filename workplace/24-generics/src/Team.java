@@ -1,23 +1,27 @@
 import java.util.ArrayList;
 import java.util.List;
 
-record BaseBallPlayer(String name, int age) {
+interface Player {
+
 }
 
-public class BaseBallTeam {
+record FootBallPlayer(String name, int score) implements Player {}
+record BaseBallPlayer(String name, int score) implements Player {}
+
+public class Team<T> {
 
     private String name;
-    private List<BaseBallPlayer> teamMembers;
+    private List<T> teamMembers;
     private int totalWins;
     private int totalLoses;
     private int totalTries;
 
-    public BaseBallTeam(String name) {
+    public Team(String name) {
         this.name = name;
-        teamMembers = new ArrayList<BaseBallPlayer>();
+        teamMembers = new ArrayList<T>();
     }
 
-    public void addTeamMember(BaseBallPlayer player) {
+    public void addTeamMember(T player) {
         if(!teamMembers.contains(player)) {
             teamMembers.add(player);
         }

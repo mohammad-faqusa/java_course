@@ -3,10 +3,10 @@
 public class Main {
     public static void main(String[] args) {
 
-        BaseBallPlayer player1 = new BaseBallPlayer("John", 23);
-        BaseBallPlayer player2 = new BaseBallPlayer("Jane", 22);
+        Player player1 = new BaseBallPlayer("John", 23);
+        Player player2 = new FootBallPlayer("Jane", 22);
 
-        BaseBallTeam team1 = new BaseBallTeam("New York Yankees");
+        Team<Player> team1 = new Team<>("New York Yankees");
         team1.addTeamMember(player1);
         team1.addTeamMember(player2);
         team1.listTeamMembers();
