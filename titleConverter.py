@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 12: Deep Dive into Java Generics: Bounds, Comparators & Advanced Techniques"
 # section_title = "coding-exercises"
 
-part_title = "166. Refining Generic Classes: Polymorphism & Type Safety"
+part_title = "167. Advanced Generics: Multiple Type Parameters & Bounded Types"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
