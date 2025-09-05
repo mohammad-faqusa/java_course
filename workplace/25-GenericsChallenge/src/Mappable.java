@@ -60,3 +60,4 @@ abstract class Line implements Mappable {
         return str;
     }
 }
+

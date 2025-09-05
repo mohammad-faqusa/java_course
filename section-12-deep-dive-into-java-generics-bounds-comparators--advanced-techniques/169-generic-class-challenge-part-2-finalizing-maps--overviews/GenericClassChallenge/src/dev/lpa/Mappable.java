@@ -1,31 +1,17 @@
-## 168. Generic Class Challenge (Part 1): Building Reusable Structures
+package dev.lpa;
 
-### the challenge 
-* mappable interface : 
-  * methods: 
-    * abstract render 
-* create two classes : Point, Line 
-* create two specific classes that extends each of these 
-![img.png](img.png)
-
-
-### the tasks 
-* create new project 
-* create Mappable interface
-
-```java
 import java.util.Arrays;
 
 public interface Mappable {
+
     void render();
 
     static double[] stringToLatLon(String location) {
 
         var splits = location.split(",");
-        double lat = Double.valueOf(split[0]);
-        double lng = Double.valueOf(split[1]);
-
-        return new double[]{let, lng};
+        double lat = Double.valueOf(splits[0]);
+        double lng = Double.valueOf(splits[1]);
+        return new double[]{lat, lng};
     }
 }
 
@@ -39,6 +25,7 @@ abstract class Point implements Mappable {
 
     @Override
     public void render() {
+
         System.out.println("Render " + this + " as POINT (" + location() + ")");
     }
 
@@ -47,19 +34,25 @@ abstract class Point implements Mappable {
     }
 }
 
+
 abstract class Line implements Mappable {
+
     private double[][] locations;
 
-    public line(String... locations) {
+    public Line(String... locations) {
         this.locations = new double[locations.length][];
         int index = 0;
         for (var l : locations) {
             this.locations[index++] = Mappable.stringToLatLon(l);
         }
+    }
 
-        private String locations() {
-            return Arrays.deepToString(locations);
-        }
+    @Override
+    public void render() {
+        System.out.println("Render " + this + " as LINE (" + locations() + ")");
+    }
+
+    private String locations() {
+        return Arrays.deepToString(locations);
     }
 }
-```
