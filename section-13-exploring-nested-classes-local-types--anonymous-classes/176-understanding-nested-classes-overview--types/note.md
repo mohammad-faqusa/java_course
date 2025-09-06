@@ -9,3 +9,4 @@
 | local class             | declared within a method body                                                                               |
 | anonymous class         | unnamed class, declared and instantiated in same statement                                                  |
 
+## 176. Understanding Nested Classes: Overview & Types
