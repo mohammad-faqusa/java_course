@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -28,6 +29,17 @@ public class Main {
         var resultQuery = studentsQuery.getItems("name" , "John");
         System.out.println("here is the queried list : ");
         printMoreList(resultQuery);
+
+        resultQuery.sort(Comparator.reverseOrder());
+//
+        printMoreList(resultQuery);
+
+        System.out.println("this is lpa student : ");
+        printMoreList(lpaStudents);
+        System.out.println("sorted  lpa student : ");
+        lpaStudents.sort(new LPAStudentComparator());
+        printMoreList(lpaStudents);
+
     }
 
     public static void printMoreList(List<? extends Student>students) {
