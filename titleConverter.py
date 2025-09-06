@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 12: Deep Dive into Java Generics: Bounds, Comparators & Advanced Techniques"
+section_title = "Section 13: Exploring Nested Classes, Local Types & Anonymous Classes"
 # section_title = "coding-exercises"
 
-part_title = "175. Final Generics Challenge: Integrating Bounded Types & Comparators"
+part_title = "176. Understanding Nested Classes: Overview & Types"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
