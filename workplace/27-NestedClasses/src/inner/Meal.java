@@ -1,9 +1,12 @@
 package inner;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Meal {
 
     private int price = 5;
-    private Item burger;
+    private Burger burger;
     private Item drink;
     private Item side;
 
@@ -15,20 +18,25 @@ public class Meal {
 
     public Meal(double conversionRate) {
         this.conversionRate = conversionRate;
-        burger = new Item("regular", "burger");
+        burger = new Burger("regular");
         drink = new Item("coke", "drink", 2.5);
         side = new Item("fries", "side", 1.5);
     }
 
     public double getTotal() {
-        double totalPrice =  burger.price + drink.price + side.price;
+        double totalPrice =  burger.getPrice() + drink.price + side.price;
         return Item.getPrice(totalPrice, conversionRate);
     }
+
 
     @Override
     public String toString() {
         return "%s%n%s%n%s%n%26s$%.2f".formatted(burger, drink, side,
                 "Total Due: ", getTotal());
+    }
+
+    public void addToppings(String... selectedToppings) {
+        burger.addTopping(selectedToppings);
     }
 
     private class Item {
@@ -57,4 +65,58 @@ public class Meal {
             return totalPrice * rate;
         }
     }
+
+    private class Burger extends Item {
+
+        private enum Extra {
+            LETTUCE, CHEESE, TOMATO, ONION, PINEAPPLE, PEPPERONI;
+
+            private double getPrice() {
+                return switch(this) {
+                    case LETTUCE -> 0.5;
+                    case CHEESE -> 0.75;
+                    case TOMATO -> 1.0;
+                    case ONION -> 0.25;
+                    case PINEAPPLE -> 0.45;
+                    case PEPPERONI -> 0.65;
+                    default -> 0;
+                };
+            }
+        }
+
+        private List<Item> toppings = new ArrayList<>();
+
+        Burger(String name) {
+            super(name, "burger", 5.0);
+        }
+
+        private double getPrice() {
+            double total = super.price;
+            for(Item topping : toppings) {
+                total += topping.price;
+            }
+            return total;
+        }
+
+        private void addTopping(String... selectedToppings) {
+            for(String selectedTopping : selectedToppings) {
+                try {
+                    Extra topping = Extra.valueOf(selectedTopping.toUpperCase());
+                    toppings.add(new Item(topping.name(), "Topping", topping.getPrice()));
+                } catch (IllegalArgumentException e) {
+                    System.out.println("Invalid topping: " + selectedTopping);
+                }
+            }
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder(super.toString());
+            for(Item topping : toppings) {
+                sb.append("\n").append(topping);
+            }
+            return sb.toString();
+        }
+    }
+
 }
