@@ -21,6 +21,20 @@ public class Main {
 
         //        var comparator = new Employee.EmloyeeComparator<>();
 //        employee.sort(comparator);
+
+        System.out.println("Store memebers ");
+        List<StoreEmployee> storeEmployees = new ArrayList<>(List.of(
+                new StoreEmployee(101, "Ali", 2019, "Walmart"),
+                new StoreEmployee(102, "Sara", 2020, "Target"),
+                new StoreEmployee(103, "John", 2018, "Walmart"),
+                new StoreEmployee(104, "Zara", 2021, "Target")
+        ));
+
+        storeEmployees.sort(storeEmployees.get(0).new StoreEmployeeComparator());
+
+        for(StoreEmployee employee : storeEmployees) {
+            System.out.println(employee);
+        }
     }
 
 }

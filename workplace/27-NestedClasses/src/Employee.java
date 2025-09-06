@@ -26,11 +26,9 @@ public class Employee {
     }
 
     public Employee (int employeeId, String name, int yearStarter) {
-
         this.employeeId = employeeId;
         this.name  = name;
         this.yearStarted = yearStarter;
-
 
     }
 
