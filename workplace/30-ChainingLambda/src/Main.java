@@ -1,13 +1,16 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+record Person(String fname, String lname){}
 public class Main {
+
+
     public static void main(String[] args) {
+
 
         String firstName = "Mohammad";
 
@@ -24,11 +27,16 @@ public class Main {
         uCaseLastName = uCase.compose(lastName);
         System.out.println(uCaseLastName.apply("Mohammad"));
 
+//        Function<String, String> f0 = uCase
+//                .andThen(s -> s.split(" "))
+//                .andThen(Arrays::asList)
+//                .andThen(ArrayList::new)
+//                .andThen(s -> {Collections.reverse(s); return s;})
+//                .andThen(list -> String.join(" ", list));
+
         Function<String, String> f0 = uCase
                 .andThen(s -> s.split(" "))
-                .andThen(Arrays::asList)
-                .andThen(ArrayList::new)
-                .andThen(s -> {Collections.reverse(s); return s;})
+                .andThen(arr -> { Arrays.sort(arr); return arr; })
                 .andThen(list -> String.join(" ", list));
 
         System.out.println(f0.apply("Mohammad Khaled Hasan Faqusa"));
@@ -47,7 +55,19 @@ public class Main {
         Predicate<String> combined3  = p2.and(p3).negate();
         System.out.println(combined3.test("Mohammad"));
 
+        List<Person> people = new ArrayList<>(Arrays.asList(
+                new Person("Mohammad" , "Faqusa"),
+                new Person("Ahmad" , "Faqusa")
+        ));
 
+//        people.sort((o1, o2)-> o1.fname().compareTo(o2.fname()));
+
+        System.out.println(people);
+
+        System.out.println("-------------------------------------------------");
+        people.sort(Comparator.comparing(Person::fname)
+                .thenComparing(Person::lname));
+        System.out.println(people);
 
     }
 }
