@@ -22,4 +22,4 @@
 15. create method type of PlainOld[] , seedArray , params : supplier, count 
 16. setAll, create instance 
 17. invoke the method in main method 
-18. 
+18. ## 192. Demystifying Method References: Simplifying Lambda Expressions in Java Code
