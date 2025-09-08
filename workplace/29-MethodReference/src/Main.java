@@ -1,5 +1,4 @@
-import java.util.function.BinaryOperator;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -27,6 +26,28 @@ public class Main {
 
         createPlainArray(PlainOld::new, 10);
 
+        calculator(String::concat, "hello" , "world");
+
+        BinaryOperator<String> strlamda = (str1, str2) -> str1 + str2;
+        System.out.println(strlamda.apply("hello", "world"));
+
+        BiFunction<String, String, String> str3lambda = String::concat;
+        System.out.println(str3lambda.apply("hello", "world"));
+
+        UnaryOperator<String> unaryLambda = String::toUpperCase;
+        System.out.println(unaryLambda.apply("hello"));
+
+        String transfomred = "hello".transform(unaryLambda);
+
+        System.out.println(transfomred);
+
+        Function<String, String> functionLambda = String::toUpperCase;
+
+        String transformed2 = "Hello World".transform(functionLambda);
+
+        Function<String, Boolean> functionLambda2 = String::isEmpty;
+        System.out.println("".transform(functionLambda2));
+        System.out.println("Hello".transform(functionLambda2));
     }
 
     private static <T> void calculator(BinaryOperator<T> binaryLambda , T a , T b) {
