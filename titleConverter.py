@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 13: Exploring Nested Classes, Local Types & Anonymous Classes"
 # section_title = "coding-exercises"
 
-part_title = "193. Understanding the Most Complex Method References: Unbounded Receiver Explained"
+part_title = "194. Hands-On Practice: Method Reference Challenge for Practical Skill Development"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
