@@ -55,10 +55,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 13: Exploring Nested Classes, Local Types & Anonymous Classes"
+section_title = "Section 15: Mastering Java Collections: Framework, Lists, Sets, and Maps"
 # section_title = "coding-exercises"
 
-part_title = "196. Advanced Comparator Usage: Leveraging Convenience Methods for Enhanced Sorting"
+part_title = "198. Deep Dive into Java Collections: Core Interfaces and Big Picture"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
