@@ -9,4 +9,4 @@
    * add randomly generated middle initial and include a period 
    * add a last name that is the reverse of the first name 
 Print your array or the array elements , after each change, **using the forEach method , at least once** 
-   * 
+   * ## 191. Lambda Expression Challenge: Applying Skills with Arrays, Lists, and Operations
