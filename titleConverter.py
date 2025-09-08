@@ -58,7 +58,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 13: Exploring Nested Classes, Local Types & Anonymous Classes"
 # section_title = "coding-exercises"
 
-part_title = "190. Hands-On Practice: Lambda Mini-Challenges for Skill Reinforcement and Mastery"
+part_title = "191. Lambda Expression Challenge: Applying Skills with Arrays, Lists, and Operations"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
