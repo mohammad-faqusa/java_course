@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -35,5 +32,39 @@ public class Main {
 
         cardsList = List.copyOf(Arrays.asList(kingArray));
         System.out.println(cardsList);
+
+        List<Card> kingList = new ArrayList<>(List.of(kingArray));
+
+        List<Card> deck = new ArrayList<>(Card.getStandardDeck());
+
+        Card.printStandardDeck(deck);
+        Collections.shuffle(deck);
+        Card.printStandardDeck(deck);
+
+        Collections.reverse(deck);
+        Card.printStandardDeck(deck);
+
+        var sortintAlgorithm = Comparator.comparing(Card::rank).thenComparing(Card::suit);
+        Collections.sort(deck, sortintAlgorithm);
+        Collections.reverse(deck);
+        Card.printStandardDeck(deck);
+
+//        sortintAlgorithm = Comparator.comparing(Card::suit).thenComparing(Card::rank);
+//        Collections.sort(deck, sortintAlgorithm);
+//        Card.printStandardDeck(deck);
+
+        List<Card> kingsList = new ArrayList<>(deck.subList(4,8));
+        System.out.println(kingsList);
+
+        List<Card> tens = new ArrayList<>(deck.subList(16,20));
+        System.out.println(tens);
+
+        int indexOfSublist = Collections.indexOfSubList(deck, tens);
+        System.out.println(indexOfSublist);
+
+        System.out.println(deck.containsAll(tens));
+
+        System.out.println(Collections.disjoint(deck, tens));
+        System.out.println(Collections.disjoint(kingsList, tens));
     }
 }
