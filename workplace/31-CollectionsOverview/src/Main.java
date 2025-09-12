@@ -66,5 +66,42 @@ public class Main {
 
         System.out.println(Collections.disjoint(deck, tens));
         System.out.println(Collections.disjoint(kingsList, tens));
+
+        Card tenOfHearts = Card.getNumbericCard(Card.Suit.HEART, 10);
+        Collections.sort(deck, sortintAlgorithm);
+        int index = Collections.binarySearch(deck, tenOfHearts, sortintAlgorithm);
+        System.out.println(index);
+
+        Card tenOfClubs = Card.getNumbericCard(Card.Suit.CLUB, 10);
+        Collections.replaceAll(deck,tenOfHearts, tenOfClubs );
+        Card.printStandardDeck(deck.subList(32, 36));
+        Collections.replaceAll(deck,tenOfClubs, tenOfHearts);
+        Card.printStandardDeck(deck.subList(32, 36));
+
+        if(Collections.replaceAll(deck,tenOfHearts, tenOfClubs )) {
+            System.out.println("The " + tenOfHearts + " is replaced with " +tenOfClubs );
+        } else {
+            System.out.println("It is not replaced");
+        }
+
+        System.out.println(Collections.frequency(deck, tenOfClubs));
+        System.out.println(Collections.min(deck, sortintAlgorithm));
+        System.out.println(Collections.max(deck, sortintAlgorithm));
+
+        var sortingAlgorithm2 = Comparator.comparing(Card::suit).thenComparing(Card::rank);
+
+        var copied = new ArrayList<>(deck.subList(0, 13));
+        Collections.rotate(copied,2);
+        Card.printStandardDeck(copied);
+        Card.printStandardDeck(deck.subList(0, 13));
+
+        for(int i = 0 ; i < copied.size()/2 ; i++ ) {
+            Collections.swap(copied, i , copied.size() - i - 1);
+        }
+
+        Card.printStandardDeck(copied);
+
+        Collections.reverse(copied);
+        Card.printStandardDeck(copied);
     }
 }
