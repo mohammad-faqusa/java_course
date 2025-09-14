@@ -19,9 +19,33 @@ public class Main {
 
         List<Contact> contactList = new ArrayList<>(contactEmails);
         contactList.get(0).addEmail("Google");
-        contactList.get(0).addEmail("Google");
+        contactList.get(0).addEmail("Facebook");
+        contactList.get(0).addEmail("Yahoo");
+        contactList.get(0).addEmail("Gmail");
+        contactList.get(0).addEmail("Amazon");
 
 
+
+        Set<String> setA = new HashSet<>(Arrays.asList("Mohammad", "Ahmad", "Ali", "Hammam", "Sina"));
+        Set<String> setB = new HashSet<>(Arrays.asList("Hasan", "Mohammad", "Ayman", "Amjad"));
+
+
+
+        // union
+        Set<String> setAandB = new HashSet<>(setA);
+        setAandB.addAll(setB);
+
+        System.out.println("Set A union B" + setAandB);
+
+        // overlap
+        Set<String> setAoverlapC = new HashSet<>(setA);
+        setAoverlapC.retainAll(setB);
+        System.out.println("Set A overlap B" + setAoverlapC);
+
+        // difference
+        Set<String> symmetricDifference = new HashSet<>(setAandB);
+        symmetricDifference.removeAll(setAoverlapC);
+        System.out.println("Set A difference B" + setAoverlapC);
 
     }
 
