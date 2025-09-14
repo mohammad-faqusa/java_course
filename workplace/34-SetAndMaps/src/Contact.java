@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Contact {
@@ -50,5 +51,29 @@ public class Contact {
     @Override
     public String toString() {
         return "%s : emails: %s  phones: %s".formatted(name, emails, phones);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Contact contact = (Contact) o;
+        return Objects.equals(name, contact.name) && Objects.equals(emails, contact.emails) && Objects.equals(phones, contact.phones);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, emails, phones);
+    }
+
+    public void addEmail(String companyName) {
+        String [] names = name.split(" ");
+
+        String email = "%c%s@%s.com".formatted(names[0].charAt(0), names[names.length -1], companyName.replaceAll(" ", "").toLowerCase());
+
+        if(!emails.add(email)) {
+            System.out.println("Email already in use");
+        } else {
+            System.out.println("the email " + email + " is added successfully ");
+        }
     }
 }

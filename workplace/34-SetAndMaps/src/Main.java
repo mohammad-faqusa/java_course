@@ -1,5 +1,4 @@
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -11,6 +10,18 @@ public class Main {
 
         printContacts(phones);
         printContacts(emails);
+
+        Set<Contact> contactEmails = new HashSet<>(emails);
+        Set<Contact> contactPhones = new HashSet<>(phones);
+
+        printContacts(contactEmails);
+        printContacts(contactPhones);
+
+        List<Contact> contactList = new ArrayList<>(contactEmails);
+        contactList.get(0).addEmail("Google");
+        contactList.get(0).addEmail("Google");
+
+
 
     }
 

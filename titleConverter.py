@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 15: Mastering Java Collections: Framework, Lists, Sets, and Maps"
 # section_title = "coding-exercises"
 
-part_title = "206. Preparing for Sets and Maps: Setting Up Phone and Email Contacts in Java"
+part_title = "207. Introduction to Java Sets and HashSet: Mastering Unordered Collections"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)

@@ -10,6 +10,7 @@ public class ContactData {
 
     private static final String emails = """
             Mohammad Faqusa , mohammad@gmail.com
+            Mohammad Faqusa , mohammad@gmail.com
             Ahmad Faqusa , ahmad@gmail.com
             Sina Faqusa , sina@gmail.com
             """;
