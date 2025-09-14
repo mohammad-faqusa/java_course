@@ -1,6 +1,7 @@
 import re
 import os
 import shutil
+import zipfile
 
 def title_to_filename(title):
     # Lowercase the title
@@ -37,6 +38,50 @@ def move_files(source_dir, target_dir):
     for file_name in file_names:
         shutil.move(os.path.join(source_dir, file_name), target_dir)
 
+def move_non_zip_files(source_dir, target_dir):
+    if not os.path.isdir(source_dir):
+        return
+    for name in os.listdir(source_dir):
+        src = os.path.join(source_dir, name)
+        if os.path.isfile(src) and not name.lower().endswith('.zip'):
+            shutil.move(src, target_dir)
+
+def extract_number_prefix(title: str) -> str:
+    # Try to capture leading number like "205." or "205 -" etc.
+    m = re.match(r"^\s*(\d+)", title)
+    if m:
+        return m.group(1)
+    # Fallback: try from dashed slug (take token before first dash if numeric)
+    slug = title_to_filename(title)
+    first = slug.split('-', 1)[0]
+    return first if first.isdigit() else ''
+
+def extract_zip_files(source_dir: str, target_dir: str, title: str) -> None:
+    if not os.path.isdir(source_dir):
+        return
+    os.makedirs(target_dir, exist_ok=True)
+    for name in os.listdir(source_dir):
+        if not name.lower().endswith('.zip'):
+            continue
+        src_zip = os.path.join(source_dir, name)
+        if not os.path.isfile(src_zip):
+            continue
+        # Extract directly into the target directory (no extra folder)
+        try:
+            with zipfile.ZipFile(src_zip, 'r') as zf:
+                zf.extractall(target_dir)
+        except zipfile.BadZipFile:
+            print(f"Skipping invalid zip: {src_zip}")
+            continue
+        except Exception as e:
+            print(f"Failed to extract {src_zip}: {e}")
+            continue
+        # Delete zip after successful extraction
+        try:
+            os.remove(src_zip)
+        except OSError as e:
+            print(f"Failed to delete {src_zip}: {e}")
+
 def prepare_resources(section_title, part_title):
     section_directory_path = "./" + title_to_filename(section_title)
     create_directory(section_directory_path)
@@ -46,7 +91,10 @@ def prepare_resources(section_title, part_title):
     create_file(part_directory_path, "note.md")
     note_path = os .path.join(part_directory_path, "note.md")
     append_line(note_path, f"## {part_title}")
-    move_files("./downloads", part_directory_path)
+    # Move non-zip files into the part directory
+    move_non_zip_files("./downloads", part_directory_path)
+    # Extract zip files from downloads directly into the part directory
+    extract_zip_files("./downloads", part_directory_path, part_title)
 
 def create_code_exercise(section_title, part_title):
     section_directory_path = "./" + title_to_filename(section_title)
@@ -58,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 15: Mastering Java Collections: Framework, Lists, Sets, and Maps"
 # section_title = "coding-exercises"
 
-part_title = "202. Mastering java.util.Collections: binarySearch, frequency, min, max, rotate"
+part_title = "206. Preparing for Sets and Maps: Setting Up Phone and Email Contacts in Java"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)

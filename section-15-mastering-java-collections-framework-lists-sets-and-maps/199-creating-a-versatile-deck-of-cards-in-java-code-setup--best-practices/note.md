@@ -1,48 +1,22 @@
 ## 199. Creating a Versatile Deck of Cards in Java: Code Setup & Best Practices
 
-#### Card class 
-```java
+#### the implemented code 
+* includes : record, nasted enum on that record, the use of List functions 
 
-enum Suit {
-    CLUB, DIAMOND, HEART, SPADE; 
-}
-class Card {
-    Suit suit; 
-    String face; // number card, or face card : JQKA
-    int rank; 
-    
-    @Override 
-    String toString() {
-        // the value abbreviated, asci character of suit, rank 
-        
-    }
-    
-    public static Card(Suit suit, String face) {
-        
-        return null;
-    }
-    
-    public static Card getNumericCard(Suit suit, int rank) {
-        
-        return null ;
-    }
-    public static Card getFaceCard(Suit suit, int rank) {
-        return null; 
-    }
-    
-    public static Card[] getStandardDeck() {
-        
-        return null; 
-    }
-    
-    public void printDeck(String description, Card[] list, int count) {
-        // print the Cards out in the number of rows passed 
-    }
-    
-    public void printDeck(Card[] list) {
-        printDeck("Current Deck", list, 4);
-    }
-}
-```
-![img.png](img.png)
-![img_1.png](img_1.png)
+#### The setup 
+* Card class 
+  * will be used to create a deck of playing cards 
+  * fields : 
+    * enum Suit 
+    * face field : String (number of face value of card) 
+    * rank : integer
+  * methods 
+    * toString 
+  * static methods 
+    * get numeric card 
+    * get face card 
+    * get standardDeck 
+    * printDeck 
+    * overloaded print deck 
+
+#### Suit enum 

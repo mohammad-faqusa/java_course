@@ -26,3 +26,6 @@
 #### when to use indexOf , binarySearch
 1. use binarySearch if already sorted 
 2. other wise indexOf
+## 202. Mastering java.util.Collections: binarySearch, frequency, min, max, rotate
+## 202. Mastering java.util.Collections: binarySearch, frequency, min, max, rotate
+## 202. Mastering java.util.Collections: binarySearch, frequency, min, max, rotate

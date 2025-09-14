@@ -28,3 +28,4 @@
 18. disjoint2 = collecitons.disjoint(kings,tens)
 19. print disjoint 2 
 
+## 201. Advanced java.util.Collections: Shuffle, Reverse, Sort, indexOfSubList
