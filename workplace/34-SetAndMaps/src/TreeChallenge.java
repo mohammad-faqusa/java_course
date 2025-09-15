@@ -19,7 +19,7 @@ public class TreeChallenge {
         System.out.println(justNames);
 
         NavigableSet<Contact> fullSet = new TreeSet<>(emails);
-        fullSet.addAll(emails);
+        fullSet.addAll(phones);
 
 
 
@@ -39,6 +39,29 @@ public class TreeChallenge {
 
         System.out.println(first);
         System.out.println(last);
+
+        NavigableSet<Contact> copiesSet = new TreeSet<>(fullSet);
+        System.out.println(copiesSet);
+        System.out.println("Remove last element : " + copiesSet.pollLast());
+        System.out.println("Remove First element : " + copiesSet.pollFirst());
+        System.out.println(copiesSet);
+
+        Contact mohammad = new Contact("mohammad");
+        Contact ali = new Contact("ali");
+        Contact ahmad = new Contact("ahmad");
+        Contact hasan = new Contact("hasan");
+        Contact ehsan = new Contact("ehsan");
+
+        for(Contact contact : List.of(mohammad, ali, ahmad, hasan, ehsan)) {
+            System.out.printf("ceiling(%s)=%s%n", contact.getName(), fullSet.ceiling(contact));
+            System.out.printf("higher(%s)=%s%n", contact.getName(), fullSet.higher(contact));
+        }
+
+        for(Contact contact : List.of(mohammad, ali, ahmad, hasan, ehsan)) {
+            System.out.printf("ceiling(%s)=%s%n", contact.getName(), fullSet.floor(contact));
+            System.out.printf("higher(%s)=%s%n", contact.getName(), fullSet.lower(contact));
+        }
+
 
     }
 }
