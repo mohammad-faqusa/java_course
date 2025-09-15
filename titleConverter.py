@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 15: Mastering Java Collections: Framework, Lists, Sets, and Maps"
 # section_title = "coding-exercises"
 
-part_title = "209. Java Set Operations Challenge: Setting Up Task and TaskData Classes"
+part_title = "210. Java Set Operations Challenge: Real-World Application with Task Management"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
