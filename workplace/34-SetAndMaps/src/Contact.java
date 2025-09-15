@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class Contact {
+public class Contact implements Comparable<Contact>{
 
     private String name;
     private Set<String> emails = new HashSet<>();
@@ -48,6 +48,10 @@ public class Contact {
         return newContact;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
         return "%s : emails: %s  phones: %s".formatted(name, emails, phones);
@@ -75,5 +79,10 @@ public class Contact {
         } else {
             System.out.println("the email " + email + " is added successfully ");
         }
+    }
+
+    @Override
+    public int compareTo(Contact o) {
+        return this.name.compareTo(o.name);
     }
 }
