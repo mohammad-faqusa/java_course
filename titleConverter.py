@@ -103,10 +103,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 15: Mastering Java Collections: Framework, Lists, Sets, and Maps"
+section_title = "Section 16: Mastering Mutability, Immutability and Final Keyword in Java OOP"
 # section_title = "coding-exercises"
 
-part_title = "215. Comprehensive Guide to the Java Map Interface and Its Functionality"
+part_title = "227. Deep Dive into the Final Modifier: Methods, Fields, Classes, Variables"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)

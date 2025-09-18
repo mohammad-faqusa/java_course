@@ -71,5 +71,15 @@ public class MapMain {
                 Contact::mergeContactData
                 ));
         contacts.forEach((s ,v ) -> System.out.println("key=" + s + " value=" + v));
+
+        System.out.println("-".repeat(90));
+
+        for(String name : new String[]{"Daffy Duck", "Ahmad Faqusa", "Ali Faqusa"}){
+//            contacts.compute(name,(k , v) -> new Contact(k) );
+//            contacts.computeIfAbsent(name,k-> new Contact(k) );
+            contacts.computeIfPresent(name,(k, v) -> new Contact(v.getName() + " Computed") );
+        }
+        contacts.forEach((s ,v ) -> System.out.println("key=" + s + " value=" + v));
+        System.out.println("-".repeat(90));
     }
 }
