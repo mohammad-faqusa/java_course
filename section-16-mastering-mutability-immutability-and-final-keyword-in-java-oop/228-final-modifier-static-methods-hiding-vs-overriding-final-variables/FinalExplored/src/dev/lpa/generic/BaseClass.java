@@ -2,7 +2,7 @@ package dev.lpa.generic;
 
 public class BaseClass {
 
-    public void recommendedMethod() {
+    public final void recommendedMethod() {
 
         System.out.println("[BaseClass.recommendedMethod]: Best Way to Do it");
         optionalMethod();

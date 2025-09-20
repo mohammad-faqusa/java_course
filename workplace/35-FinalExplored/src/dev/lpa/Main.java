@@ -14,7 +14,11 @@ public class Main {
 
         parent.recommendedMethod();
         System.out.println("----------------------");
-
+        childReferredToAsBase.recommendedMethod();
+        System.out.println("----------------------");
+        child.recommendedMethod();
+        System.out.println("----------------------");
+        
 
     }
 }

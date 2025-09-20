@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 16: Mastering Mutability, Immutability and Final Keyword in Java OOP"
 # section_title = "coding-exercises"
 
-part_title = "227. Deep Dive into the Final Modifier: Methods, Fields, Classes, Variables"
+part_title = "230. Designing Immutable Classes: Private Final Fields, Defensive Copies - Part 1"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
