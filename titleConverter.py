@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 16: Mastering Mutability, Immutability and Final Keyword in Java OOP"
 # section_title = "coding-exercises"
 
-part_title = "231. Creating Truly Immutable Java Classes: Preventing Subclass Modification"
+part_title = "233. Shallow vs. Deep Copies: Protecting Data Integrity in Java Applications"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)

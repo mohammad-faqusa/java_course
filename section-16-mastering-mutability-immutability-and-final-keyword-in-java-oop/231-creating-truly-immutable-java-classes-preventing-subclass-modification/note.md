@@ -25,5 +25,4 @@ assign copy of mutalbe object
 3. create protected constructor 
 4. change to protected kids feild 
 5. use getDob() instead of dob, to allow override 
-6. create LivingPerson extends PersonImmutable 
-7. 
+6. create LivingPerson extends PersonImmutable
