@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 16: Mastering Mutability, Immutability and Final Keyword in Java OOP"
 # section_title = "coding-exercises"
 
-part_title = "240. Building a Game Console Framework with Player Input"
+part_title = "241. Building a Generic Game Console: Implementing Game and Player Interactions"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
