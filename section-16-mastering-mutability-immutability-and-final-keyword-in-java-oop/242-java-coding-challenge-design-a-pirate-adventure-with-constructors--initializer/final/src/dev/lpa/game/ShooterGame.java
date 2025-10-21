@@ -3,10 +3,10 @@ package dev.lpa.game;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class ShooterGame extends Game<Shooter>{
+public class ShooterGame extends Game<Shooter> {
+
     public ShooterGame(String gameName) {
         super(gameName);
-
     }
 
     @Override
@@ -16,13 +16,13 @@ public class ShooterGame extends Game<Shooter>{
 
     @Override
     public Map<Character, GameAction> getGameActions(int playerIndex) {
+
         var map = new LinkedHashMap<>(Map.of(
                 'F',
                 new GameAction('F', "Find Prize", this::findPrize),
                 'S',
                 new GameAction('S', "Use your gun", this::useWeapon)
         ));
-
         map.putAll(getStandardActions());
         return map;
     }
@@ -34,5 +34,4 @@ public class ShooterGame extends Game<Shooter>{
     public boolean useWeapon(int playerIndex) {
         return getPlayer(playerIndex).useWeapon("pistol");
     }
-
 }
