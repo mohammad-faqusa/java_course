@@ -103,10 +103,10 @@ def create_code_exercise(section_title, part_title):
     # print(part_directory_path)
     create_directory(part_directory_path)
 
-section_title = "Section 16: Mastering Mutability, Immutability and Final Keyword in Java OOP"
+section_title = "Section 17: Comprehensive Java Streams: Operations, Pipelines, and Sources"
 # section_title = "coding-exercises"
 
-part_title = "243. Pirate Game Development in Java: Implementing Game Logic and Data Loading"
+part_title = "249. Practical Java Stream Example: Manipulating and Transforming Bingo Ball Data"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
