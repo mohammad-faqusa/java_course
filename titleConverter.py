@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 17: Comprehensive Java Streams: Operations, Pipelines, and Sources"
 # section_title = "coding-exercises"
 
-part_title = "256. Building a Student Engagement System: Code Setup - Part 1"
+part_title = "257. Student Class Construction: Code Setup - Part 2 for Stream Processing"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
