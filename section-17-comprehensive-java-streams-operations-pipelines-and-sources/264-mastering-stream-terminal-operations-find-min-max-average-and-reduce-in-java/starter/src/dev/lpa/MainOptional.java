@@ -1,9 +1,6 @@
 package dev.lpa;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -46,6 +43,29 @@ public class MainOptional {
                 .map(n -> n.split(" "))
                 .filter(l -> (Optional.ofNullable(l.length > 3 ? l[3] : null).orElseGet(()-> "mod")).equals("mad"))
                 .ifPresentOrElse(s -> System.out.println(s[0]), ()-> System.out.println("empty"));
+
+        int minAge = 30;
+        students.stream()
+                .filter(s -> s.getAge() <= minAge)
+                .findAny()
+                .ifPresentOrElse(System.out::println, ()-> System.out.println("not found"));
+
+        students.stream()
+                .filter(s -> s.getAge() <= minAge)
+                .max(Comparator.comparing(Student::getAge))
+                .ifPresentOrElse(System.out::println, ()-> System.out.println("not found"));
+
+        students.stream()
+                .mapToInt(Student::getAge)
+                .average()
+                .ifPresentOrElse(System.out::println, ()-> System.out.println("not found"));
+
+        students.stream()
+                .map(Student::getCountryCode)
+                .distinct()
+                .reduce((a, b) -> String.join( " ", a, b))
+                .ifPresentOrElse(System.out::println, ()-> System.out.println("Non Found"));
+
 
 
     }
