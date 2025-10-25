@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 18: Java Core Fundamentals: Math, Randomization, BigDecimal, and Date/Time"
 # section_title = "coding-exercises"
 
-part_title = "270. Comprehensive Guide to Random Number Generation: Math.random and Random"
+part_title = "276. Working with LocalDate in Java: Creation, Manipulation, and Comparison"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)
