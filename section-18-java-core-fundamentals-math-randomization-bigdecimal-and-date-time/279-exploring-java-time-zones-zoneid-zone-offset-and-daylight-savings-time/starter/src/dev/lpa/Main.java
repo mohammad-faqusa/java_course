@@ -1,8 +1,9 @@
 package dev.lpa;
 
-import java.time.Instant;
-import java.time.ZoneId;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.TimeZone;
 
@@ -30,8 +31,31 @@ public class Main {
         ZoneId bet = ZoneId.of("BET", ZoneId.SHORT_IDS);
         System.out.println(bet);
 
-        Instant now = Instant.now();
-        System.out.println(now);
+        Instant instantNoe = Instant.now();
+        System.out.println(instantNoe);
+
+        for(ZoneId z : List.of(
+                ZoneId.of("Australia/Sydney"),
+                ZoneId.of("Europe/Paris"),
+                ZoneId.of("America/New_York")
+        )){
+            DateTimeFormatter zoneFormat = DateTimeFormatter.ofPattern("z:zzzz");
+            System.out.println(z);
+            System.out.println("\t"+  instantNoe.atZone(z).format(zoneFormat));
+        }
+
+
+//        System.out.println(LocalDate.EPOCH);
+
+        Period timePast = Period.between(LocalDate.EPOCH, LocalDate.now());
+        System.out.println(timePast );
+
+
+
+        LocalDateTime dob2 = LocalDateTime.of(2022, 5, 5 ,10, 0);
+        Duration timeSince  = Duration.between(Instant.EPOCH, dob2.toInstant(ZoneOffset.UTC));
+        System.out.println(timeSince);
+
 
     }
 }
