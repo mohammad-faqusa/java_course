@@ -106,7 +106,7 @@ def create_code_exercise(section_title, part_title):
 section_title = "Section 19: Regular Expressions in Java: Mastering Pattern Matching and Text Manipulation"
 # section_title = "coding-exercises"
 
-part_title = "292. Extracting Data with Matcher: find(), group(), Grouping, and Capturing in Java"
+part_title = "293. Replacing Text Efficiently: Exploring Matcher's Replacement Methods in Java"
 print(f"export PART_TITLE='{part_title}'")
 
 prepare_resources(section_title, part_title)

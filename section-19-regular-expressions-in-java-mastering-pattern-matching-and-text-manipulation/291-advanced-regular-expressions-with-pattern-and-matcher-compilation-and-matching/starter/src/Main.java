@@ -27,7 +27,7 @@ public class Main {
                 
                 """;
 
-        Pattern hPattern = Pattern.compile("<[hH](\\d)>(.*)</(?<level>[Hh]\\d)>");
+        Pattern hPattern = Pattern.compile("<([hH]\\d)>(.*)</(?<level>[Hh]\\d)>");
 
         var hmatcher = hPattern.matcher(htmlSnippest);
 
@@ -36,6 +36,22 @@ public class Main {
             System.out.println("found : " + hmatcher.group(1));
             System.out.println("found : " + hmatcher.group(2));
             System.out.println("found : " + hmatcher.group("level"));
+        }
+
+        hmatcher.reset();
+        hmatcher.results().forEach(m -> System.out.println("found : " + m.group()));
+
+        hmatcher.reset();
+
+        StringBuilder sb = new StringBuilder();
+        while(hmatcher.find()) {
+            String sentence = switch (hmatcher.group(1).toLowerCase()) {
+                case "h1" -> "<header>" + hmatcher.group(2) + "</header>";
+                case "p" -> "<body>" + hmatcher.group(2) + "</body>";
+                default -> "<%s>".formatted(hmatcher.group(1)) + hmatcher.group(2) + "</%s>".formatted(hmatcher.group(1));
+
+            };
+            System.out.println(sentence);
         }
     }
 }
